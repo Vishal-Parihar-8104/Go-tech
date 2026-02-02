@@ -14,8 +14,7 @@ const loadCounter=[
     title:"Projects Completed",
   }
 ]
-
-function HeroSection({title="SAMPLE",loadCounter=[],description="",children=null,button={text:"",bgColor:"#f97316",onClick:()=>{}}}) {
+function HeroSection({title="SAMPLE",loadCounter=[],description="",children=null,button={text:"",bgColor:"#f97316",onClick:()=>{}}}: {title?:string; loadCounter?: any[]; description?:string; children?: React.ReactNode; button?: {text?:string; bgColor?:string; onClick?:()=>void}}) {
   const buttonStyle = {
     backgroundColor: button?.bgColor || "#f97316"
   };

@@ -9,7 +9,7 @@ function page() {
         <HeroSection
         title={hero.title}
         description={hero.description}
-        button={{text:hero.button.text,bgColor:hero.button.bgColor}}
+        button={{text:hero.button.text,bgColor:hero.button.bgColor,onClick:()=>{}}}
         loadCounter={hero.loadCounter}
         />
     </div>
