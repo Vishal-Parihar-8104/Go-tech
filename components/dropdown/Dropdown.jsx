@@ -275,10 +275,16 @@ const Dropdown = ({ menuTitle, description, data }) => {
       ))}
     </div>
 
+
   </div>
 )}
 
+
         </div>
+        <h4 className="pb-10 text-[#000]">
+   All Categories
+  </h4>
+            
       </div>
     </div>
   );

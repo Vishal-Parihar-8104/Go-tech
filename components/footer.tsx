@@ -1,7 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { Box, Container, Grid, Typography, Link, Divider, IconButton } from '@mui/material';
+import { Box, Container, Grid, Typography, Link, Divider, IconButton, colors } from '@mui/material';
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube, ArrowRight} from 'lucide-react';
+import { YouTube } from '@mui/icons-material';
+import { cursorTo } from 'readline';
 
 function Footer() {
   return (
@@ -183,12 +185,29 @@ function Footer() {
       <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 1 }}>
         <MapPin size={14} style={{ marginTop: '2px' }} />
         <Typography variant="caption">
-          515-517, 5th floor, Amrit Shree, Udaipur, 313001
+          515-517, 5th floor, Amrit Shree, <br></br>University Road,<br></br> Udaipur, Rajasthan 313001
         </Typography>
+      </Box>
+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 , color:'white', textDecoration:'none'}}>
+         <Link href="https://www.facebook.com/GoTechSolution05" className=''>
+         <Facebook size={20} className='p-'></Facebook>
+         </Link> 
+          <Link href="https://www.instagram.com/gotech_solution/">
+          <Instagram size={20} className='p'></Instagram>
+          </Link>
+        <Link href="https://www.linkedin.com/company/go-techsolution5/">
+        <Linkedin size={20} className='p'></Linkedin>
+        </Link> 
+        <Link href="https://www.youtube.com/@Gotechsolution">
+      <YouTube size={20} className='p'></YouTube>
+        </Link> 
       </Box>
     </Box>
   </Grid>
+   
+    
 
+    
 </Grid>
         {/* Bottom Bar */}
         <Divider sx={{ borderColor: 'rgba(255,255,255,0.2)', my: 4 }} />
